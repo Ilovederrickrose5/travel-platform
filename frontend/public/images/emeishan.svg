@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21452f"/>
+      <stop offset="100%" stop-color="#7ba55f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="655" cy="95" r="50" fill="#fff" opacity="0.25"/>
+  <path d="M0 400 L140 210 L270 350 L420 160 L570 370 L700 250 L800 390 L800 500 L0 500 Z" fill="#fff" opacity="0.16"/>
+  <path d="M0 445 C170 425 300 455 460 435 C620 415 720 445 800 430 L800 500 L0 500 Z" fill="#fff" opacity="0.18"/>
+  <text x="60" y="200" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="52" font-weight="bold" fill="#fff">峨眉山</text>
+  <text x="62" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">乐山 · 5A 景区</text>
+</svg>

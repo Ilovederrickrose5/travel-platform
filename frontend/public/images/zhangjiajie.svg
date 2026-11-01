@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#143d2e"/>
+      <stop offset="100%" stop-color="#3f8c66"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="655" cy="95" r="50" fill="#fff" opacity="0.2"/>
+  <g fill="#fff" opacity="0.18">
+    <path d="M60 500 L90 210 L120 500 Z"/>
+    <path d="M170 500 L205 150 L240 500 Z"/>
+    <path d="M290 500 L320 240 L350 500 Z"/>
+    <path d="M400 500 L440 180 L480 500 Z"/>
+    <path d="M530 500 L560 260 L590 500 Z"/>
+    <path d="M640 500 L675 200 L710 500 Z"/>
+  </g>
+  <text x="60" y="150" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="46" font-weight="bold" fill="#fff">张家界国家森林公园</text>
+  <text x="62" y="196" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">张家界 · 5A 景区</text>
+</svg>

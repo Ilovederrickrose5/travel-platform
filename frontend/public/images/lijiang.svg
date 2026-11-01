@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d4a5a"/>
+      <stop offset="100%" stop-color="#5fa8a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="650" cy="95" r="50" fill="#fff" opacity="0.22"/>
+  <path d="M0 330 L130 190 L260 310 L400 180 L540 320 L670 210 L800 320 L800 500 L0 500 Z" fill="#fff" opacity="0.13"/>
+  <path d="M0 410 C170 390 300 425 460 405 C620 385 720 420 800 405 L800 500 L0 500 Z" fill="#fff" opacity="0.2"/>
+  <text x="60" y="200" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="52" font-weight="bold" fill="#fff">桂林漓江</text>
+  <text x="62" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">桂林 · 5A 景区</text>
+</svg>

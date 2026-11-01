@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d6b8a"/>
+      <stop offset="100%" stop-color="#5bc6d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="650" cy="100" r="54" fill="#fff" opacity="0.28"/>
+  <path d="M0 400 C160 370 320 410 480 385 C640 360 730 400 800 380 L800 500 L0 500 Z" fill="#fff" opacity="0.22"/>
+  <path d="M0 450 C180 430 320 460 500 440 C660 425 740 450 800 440 L800 500 L0 500 Z" fill="#fff" opacity="0.18"/>
+  <path d="M0 390 Q180 330 360 390 T800 380 L800 410 Q600 440 400 405 T0 410 Z" fill="#fff" opacity="0.14"/>
+  <text x="60" y="200" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="52" font-weight="bold" fill="#fff">亚龙湾</text>
+  <text x="62" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">三亚 · 5A 景区</text>
+</svg>

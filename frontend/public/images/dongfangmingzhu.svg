@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#251b45"/>
+      <stop offset="100%" stop-color="#6c4fa3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="650" cy="100" r="52" fill="#fff" opacity="0.22"/>
+  <g fill="#fff" opacity="0.22">
+    <rect x="420" y="300" width="10" height="200"/>
+    <rect x="470" y="250" width="10" height="250"/>
+    <rect x="520" y="320" width="10" height="180"/>
+    <circle cx="425" cy="250" r="26"/>
+    <circle cx="475" cy="190" r="20"/>
+    <circle cx="475" cy="235" r="20"/>
+    <rect x="400" y="410" width="150" height="8"/>
+  </g>
+  <path d="M0 450 C180 430 320 460 480 440 C640 420 730 450 800 435 L800 500 L0 500 Z" fill="#fff" opacity="0.15"/>
+  <text x="60" y="200" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="46" font-weight="bold" fill="#fff">东方明珠</text>
+  <text x="62" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">上海 · 5A 景区</text>
+</svg>

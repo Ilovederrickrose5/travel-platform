@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c3c2f"/>
+      <stop offset="100%" stop-color="#4f7d5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="660" cy="100" r="52" fill="#fff" opacity="0.22"/>
+  <path d="M0 360 L140 210 L280 350 L420 230 L580 360 L800 250 L800 500 L0 500 Z" fill="#fff" opacity="0.12"/>
+  <path d="M0 400 C120 360 200 400 300 380 C420 355 520 395 620 375 C700 360 760 385 800 370 L800 500 L0 500 Z" fill="#fff" opacity="0.16"/>
+  <text x="60" y="200" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="52" font-weight="bold" fill="#fff">八达岭长城</text>
+  <text x="62" y="248" font-family="'Microsoft YaHei','PingFang SC',sans-serif" font-size="26" fill="#fff" opacity="0.85">北京 · 5A 景区</text>
+</svg>
