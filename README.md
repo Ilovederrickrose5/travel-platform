@@ -116,7 +116,7 @@ mysql -u root -p < src/main/resources/db/seed_guides.sql
 ```
 
 - `schema.sql`：建库 `travel_ticket` 并创建全部表
-- `data.sql`：基础数据（景点、票种与演示账号）
+- `data.sql`：演示数据（含 98 个景点、122 个票种与演示账号）
 - `seed_guides.sql`：补齐景点攻略文案，可重复执行且不会覆盖已编辑内容
 
 ### 2. 启动后端
