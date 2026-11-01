@@ -26,6 +26,28 @@
 - **游客管理**：禁用/启用账号、重置密码
 - **核销工作台**：按订单号核销门票并记录核销数量
 
+## 界面预览
+
+### 游客端
+
+| 首页 | 景点列表 |
+| --- | --- |
+| ![首页](docs/screenshots/home.jpg) | ![景点列表](docs/screenshots/attractions.jpg) |
+
+| 景点详情 | 中国景点地图 |
+| --- | --- |
+| ![景点详情](docs/screenshots/attraction-detail.jpg) | ![景点地图](docs/screenshots/map.jpg) |
+
+| 登录 | 我的订单 |
+| --- | --- |
+| ![登录](docs/screenshots/login.jpg) | ![我的订单](docs/screenshots/orders.jpg) |
+
+### 管理端（`/admin`）
+
+| 经营看板 | 景点目的地 | 票种库存 |
+| --- | --- | --- |
+| ![经营看板](docs/screenshots/admin-dashboard.jpg) | ![景点管理](docs/screenshots/admin-attractions.jpg) | ![票种库存](docs/screenshots/admin-inventory.jpg) |
+
 ## 技术栈
 
 | 层次 | 技术 |
@@ -69,6 +91,7 @@ travel-platform/
 │       ├── views/              # 页面，admin/ 下为管理端页面
 │       ├── router/             # 路由与登录守卫
 │       └── styles/             # 设计令牌与全局样式
+├── docs/screenshots/           # README 用界面截图
 ├── uploads/                    # 本地文件上传目录（不纳入版本库）
 └── pom.xml
 ```
@@ -93,7 +116,7 @@ mysql -u root -p < src/main/resources/db/seed_guides.sql
 ```
 
 - `schema.sql`：建库 `travel_ticket` 并创建全部表
-- `data.sql`：演示数据（含 93 个景点、117 个票种与演示账号）
+- `data.sql`：基础数据（景点、票种与演示账号）
 - `seed_guides.sql`：补齐景点攻略文案，可重复执行且不会覆盖已编辑内容
 
 ### 2. 启动后端
