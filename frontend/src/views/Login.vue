@@ -38,9 +38,14 @@
             <p class="px-eyebrow">Welcome back</p>
             <h2 class="login-panel__title">{{ activeTab === 'login' ? '登录 Travel' : '创建账号' }}</h2>
             <p class="login-panel__subtitle">
-              {{ activeTab === 'login' ? '游客 traveler / travel123 · 管理员 admin / admin123，登录后自动进入对应界面。' : '填写基本信息，即可开始预订旅程。' }}
+              {{ activeTab === 'login' ? '请输入账号和密码登录，也可以直接使用游客演示账号。' : '填写基本信息，即可开始预订旅程。' }}
             </p>
           </header>
+
+          <div v-if="activeTab === 'login'" class="login-demo">
+            <span class="login-demo__label">游客演示</span>
+            <span class="login-demo__account">traveler / travel123</span>
+          </div>
 
           <div class="auth-switch" role="tablist">
             <span
@@ -522,6 +527,33 @@ async function handleRegister() {
   font-size: var(--px-text-sm);
   line-height: var(--px-leading-snug);
   color: var(--px-ink-3);
+}
+
+.login-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 8px 12px;
+  border-radius: var(--px-radius-sm, 8px);
+  background: rgba(84, 108, 150, 0.06);
+  border: 1px solid rgba(84, 108, 150, 0.14);
+}
+
+.login-demo__label {
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #4a628a;
+  background: rgba(84, 108, 150, 0.12);
+}
+
+.login-demo__account {
+  font-family: var(--px-font-mono, ui-monospace, monospace);
+  font-size: 12px;
+  color: var(--px-ink-2);
 }
 
 .auth-switch {

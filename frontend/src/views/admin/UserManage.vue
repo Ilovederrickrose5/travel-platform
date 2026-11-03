@@ -130,7 +130,7 @@ async function toggleStatus(row, nextStatus) {
 async function handleResetPassword(row) {
   try {
     await ElMessageBox.confirm(
-      `确定要把游客「${row.nickname || row.username}」的密码重置为默认密码吗？`,
+      `确定要把游客「${row.nickname || row.username}」的密码重置为随机密码吗？`,
       '重置密码',
       { type: 'warning', confirmButtonText: '重置', cancelButtonText: '取消' }
     )

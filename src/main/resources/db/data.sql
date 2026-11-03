@@ -1,8 +1,8 @@
 USE `travel_ticket`;
 
--- 演示账号：admin / admin123（管理员）
+-- 管理员账号（密码在部署时设置，仓库不提供默认密码）
 INSERT IGNORE INTO `app_user` (`id`, `username`, `password`, `nickname`, `phone`, `email`, `status`, `role`)
-VALUES (1, 'admin', 'pbkdf2$120000$NstSPJdsoeDymSBSk2Vrqw==$mS0vhVaXoayaXrqPBuo3jrdyTW6fKj/RFhQcnNmaD2M=',
+VALUES (1, 'admin', 'pbkdf2$120000$LOM25pd0L6yQocREakES/A==$MC73a3LGMbxnt5It+nafVcnaodRjY34mdIVk4Im+1Lg=',
         '管理员', '13800000000', 'admin@example.com', 1, 1);
 
 -- 演示账号：traveler / travel123（普通游客）

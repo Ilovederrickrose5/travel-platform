@@ -59,6 +59,10 @@ public final class PasswordUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(encode(args.length > 0 ? args[0] : "admin123"));
+        if (args.length == 0) {
+            System.out.println("usage: PasswordUtil <rawPassword>");
+            return;
+        }
+        System.out.println(encode(args[0]));
     }
 }

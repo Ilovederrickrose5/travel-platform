@@ -10,18 +10,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.security.SecureRandom;
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class AdminUserService {
 
-    /**
-     * 管理员重置后的默认密码，与演示游客账号保持一致。
-     */
-    public static final String DEFAULT_PASSWORD = "travel123";
-
     private static final int VISITOR_ROLE = 0;
+    private static final SecureRandom SECURE_RANDOM = new SecureRandom();
+    private static final char[] PASSWORD_CHARS =
+            "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789".toCharArray();
 
     private final UserMapper userMapper;
 
@@ -55,11 +54,20 @@ public class AdminUserService {
 
     public String resetPassword(Long id) {
         User user = requireVisitor(id);
+        String newPassword = generatePassword();
         User update = new User();
         update.setId(user.getId());
-        update.setPassword(PasswordUtil.encode(DEFAULT_PASSWORD));
+        update.setPassword(PasswordUtil.encode(newPassword));
         userMapper.updateById(update);
-        return DEFAULT_PASSWORD;
+        return newPassword;
+    }
+
+    private String generatePassword() {
+        StringBuilder password = new StringBuilder(12);
+        for (int i = 0; i < 12; i++) {
+            password.append(PASSWORD_CHARS[SECURE_RANDOM.nextInt(PASSWORD_CHARS.length)]);
+        }
+        return password.toString();
     }
 
     private User requireVisitor(Long id) {

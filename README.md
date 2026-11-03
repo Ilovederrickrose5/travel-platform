@@ -149,10 +149,10 @@ npm run dev
 
 | 角色 | 账号 | 密码 | 登录后进入 |
 | --- | --- | --- | --- |
-| 管理员 | `admin` | `admin123` | `/admin/dashboard` |
-| 游客 | `traveler` | `travel123` | 首页 |
+| 管理员 | `admin` | 部署时设置 | `/admin/dashboard` |
+| 游客 | `traveler` | `travel123`（演示账号） | 首页 |
 
-管理员账号被重置密码后，默认密码为 `travel123`。
+管理员重置游客密码时会生成随机新密码，并在页面上仅显示一次。
 
 ## 接口文档
 
